@@ -1,0 +1,57 @@
+{
+    "project": "AIS-Based Municipal Waste Management and Conservancy Workforce Optimization",
+    "algorithm": "Artificial Immune System",
+    "method": "Clonal Selection Algorithm",
+    "evaluation_type": "Synthetic Simulation",
+    "best_generation": 150,
+    "best_validation_loss": 0.06028912588953972,
+    "training_metrics": {
+        "MAE": 139.5596875,
+        "MSE": 31749.6434375,
+        "RMSE": 178.18429627074323,
+        "R2_Score": 0.9428255994326439,
+        "R2_Percentage": 94.28255994326439,
+        "MAPE_Percentage": 17.66846872696373
+    },
+    "validation_metrics": {
+        "MAE": 140.211875,
+        "MSE": 33480.266875,
+        "RMSE": 182.97613744693595,
+        "R2_Score": 0.9444413421438732,
+        "R2_Percentage": 94.44413421438732,
+        "MAPE_Percentage": 17.686290433318682
+    },
+    "test_metrics": {
+        "MAE": 143.0005,
+        "MSE": 33268.9845,
+        "RMSE": 182.39787416524348,
+        "R2_Score": 0.9472093123421627,
+        "R2_Percentage": 94.72093123421627,
+        "MAPE_Percentage": 17.705429750024066
+    },
+    "workforce_summary": {
+        "Algorithm": "Artificial Immune System",
+        "Optimization_Method": "Clonal Selection",
+        "Total_Test_Scenarios": 2000,
+        "Best_Generation": 150,
+        "Best_Validation_Loss": 0.06028912588953972,
+        "R2_Score": 0.9472093123421627,
+        "R2_Percentage": 94.72093123421627,
+        "MAE": 143.0005,
+        "RMSE": 182.39787416524348,
+        "MAPE_Percentage": 17.705429750024066,
+        "Average_Available_Workforce": 887.598,
+        "Average_Predicted_Workforce": 1244.5255,
+        "Average_Workforce_Shortage": 472.6105,
+        "Average_Workforce_Surplus": 115.683,
+        "Average_Workforce_Utilization": 88.7673796510181,
+        "Average_Daily_Cost": 882173.5934893021,
+        "Shortage_Scenarios": 1195,
+        "Surplus_Scenarios": 805,
+        "Balanced_Scenarios": 0,
+        "Execution_Time_Seconds": 66.68967700004578,
+        "Evaluation_Type": "Synthetic Simulation",
+        "Real_World_Validated": false
+    },
+    "real_world_validated": false
+}

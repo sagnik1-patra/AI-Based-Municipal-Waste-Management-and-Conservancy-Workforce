@@ -1,0 +1,110 @@
+{
+    "project": "AI-Based Municipal Waste Management and Conservancy Workforce",
+    "evaluation_type": "Synthetic Simulation",
+    "best_model": "ANN",
+    "test_results": {
+        "Linear Regression": {
+            "MAE": 162.3105,
+            "MSE": 66998.6675,
+            "RMSE": 258.84100814979064,
+            "R2_Score": 0.8936875957399962,
+            "R2_Percentage": 89.36875957399963,
+            "MAPE_Percentage": 15.414001639790847
+        },
+        "Random Forest": {
+            "MAE": 131.559,
+            "MSE": 44451.847,
+            "RMSE": 210.83606664894884,
+            "R2_Score": 0.92946452661364,
+            "R2_Percentage": 92.94645266136399,
+            "MAPE_Percentage": 10.85253535515992
+        },
+        "Gradient Boosting": {
+            "MAE": 80.5475,
+            "MSE": 18608.9875,
+            "RMSE": 136.41476276415247,
+            "R2_Score": 0.9704715589758653,
+            "R2_Percentage": 97.04715589758653,
+            "MAPE_Percentage": 6.5798723876808936
+        },
+        "Extra Trees": {
+            "MAE": 112.7885,
+            "MSE": 32286.3765,
+            "RMSE": 179.68410196787028,
+            "R2_Score": 0.9487684988577021,
+            "R2_Percentage": 94.87684988577021,
+            "MAPE_Percentage": 9.494677297645346
+        },
+        "ANN": {
+            "MAE": 39.8755,
+            "MSE": 3466.4585,
+            "RMSE": 58.87663798146087,
+            "R2_Score": 0.9944994795993141,
+            "R2_Percentage": 99.44994795993141,
+            "MAPE_Percentage": 3.6278074354763503
+        }
+    },
+    "validation_results": {
+        "Linear Regression": {
+            "MAE": 162.159375,
+            "MSE": 64920.851875,
+            "RMSE": 254.79570615495075,
+            "R2_Score": 0.8922674239569838,
+            "R2_Percentage": 89.22674239569838,
+            "MAPE_Percentage": 15.752783885078511
+        },
+        "Random Forest": {
+            "MAE": 125.97375,
+            "MSE": 41116.04375,
+            "RMSE": 202.77091445767067,
+            "R2_Score": 0.9317701912104668,
+            "R2_Percentage": 93.17701912104668,
+            "MAPE_Percentage": 10.562648475068663
+        },
+        "Gradient Boosting": {
+            "MAE": 81.285625,
+            "MSE": 18709.388125,
+            "RMSE": 136.78226538919438,
+            "R2_Score": 0.96895280143927,
+            "R2_Percentage": 96.895280143927,
+            "MAPE_Percentage": 6.636314272860182
+        },
+        "Extra Trees": {
+            "MAE": 109.0225,
+            "MSE": 32014.965,
+            "RMSE": 178.92726175739682,
+            "R2_Score": 0.9468729298559131,
+            "R2_Percentage": 94.68729298559131,
+            "MAPE_Percentage": 9.24659432080766
+        },
+        "ANN": {
+            "MAE": 38.513125,
+            "MSE": 3051.179375,
+            "RMSE": 55.23748161348416,
+            "R2_Score": 0.9949367359708868,
+            "R2_Percentage": 99.49367359708869,
+            "MAPE_Percentage": 3.616855508396366
+        }
+    },
+    "workforce_summary": {
+        "Total_Test_Scenarios": 2000,
+        "Best_Model": "ANN",
+        "R2_Score": 0.9944994795993141,
+        "R2_Percentage": 99.44994795993141,
+        "MAE": 39.8755,
+        "RMSE": 58.87663798146087,
+        "MAPE_Percentage": 3.6278074354763503,
+        "Average_Available_Workforce": 887.598,
+        "Average_Required_Workforce": 1246.7865,
+        "Average_Workforce_Shortage": 481.382,
+        "Average_Workforce_Surplus": 122.1935,
+        "Average_Workforce_Utilization": 87.76869634001399,
+        "Average_Daily_Workforce_Cost": 884154.1901069841,
+        "Shortage_Scenarios": 1238,
+        "Surplus_Scenarios": 760,
+        "Balanced_Scenarios": 2,
+        "Evaluation_Type": "Synthetic Simulation",
+        "Real_World_Validated": false
+    },
+    "real_world_validated": false
+}

@@ -1,0 +1,2 @@
+Total_Test_Scenarios,Best_Model,R2_Score,R2_Percentage,MAE,RMSE,MAPE_Percentage,Average_Available_Workforce,Average_Required_Workforce,Average_Workforce_Shortage,Average_Workforce_Surplus,Average_Workforce_Utilization,Average_Daily_Workforce_Cost,Shortage_Scenarios,Surplus_Scenarios,Balanced_Scenarios,Evaluation_Type,Real_World_Validated
+2000,ANN,0.9944994795993141,99.44994795993141,39.8755,58.87663798146087,3.6278074354763503,887.598,1246.7865,481.382,122.1935,87.76869634001399,884154.1901069841,1238,760,2,Synthetic Simulation,False

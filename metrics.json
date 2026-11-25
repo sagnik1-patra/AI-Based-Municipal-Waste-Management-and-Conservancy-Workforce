@@ -1,0 +1,108 @@
+{
+    "project": "AI-Based Municipal Waste Management and Conservancy Workforce Optimization",
+    "evaluation_type": "Held-out synthetic scenario evaluation",
+    "original_dataset_records": 1,
+    "synthetic_dataset_records": 10000,
+    "baseline_statistics": {
+        "conservancy_workers": 847,
+        "disposal_sites": 105,
+        "other_workers": 412,
+        "total_workforce": 1259,
+        "workers_per_site": 8.066666666666666
+    },
+    "best_machine_learning_model": "Gradient_Boosting",
+    "best_overall_model": "ANN",
+    "validation_results": {
+        "Linear_Regression": {
+            "MAE": 171.09536828318247,
+            "MSE": 68784.0442174156,
+            "RMSE": 262.26712378301556,
+            "R2_Score": 0.8858566691566705,
+            "R2_Percentage": 88.58566691566705,
+            "MAPE_Percentage": 18.702804500587785
+        },
+        "Random_Forest": {
+            "MAE": 125.8762757830364,
+            "MSE": 41114.619866184825,
+            "RMSE": 202.76740336204148,
+            "R2_Score": 0.9317725540671911,
+            "R2_Percentage": 93.17725540671911,
+            "MAPE_Percentage": 10.540008126263404
+        },
+        "Gradient_Boosting": {
+            "MAE": 81.51711171320876,
+            "MSE": 18753.36417218062,
+            "RMSE": 136.94292304526226,
+            "R2_Score": 0.9688798256123957,
+            "R2_Percentage": 96.88798256123957,
+            "MAPE_Percentage": 6.750031627530861
+        },
+        "Extra_Trees": {
+            "MAE": 108.92017187500001,
+            "MSE": 32013.937084545138,
+            "RMSE": 178.92438929487824,
+            "R2_Score": 0.9468746356249643,
+            "R2_Percentage": 94.68746356249643,
+            "MAPE_Percentage": 9.222929091430803
+        },
+        "ANN": {
+            "MAE": 38.500423431396484,
+            "MSE": 3053.83447265625,
+            "RMSE": 55.26150986587545,
+            "R2_Score": 0.9949323534965515,
+            "R2_Percentage": 99.49323534965515,
+            "MAPE_Percentage": 3.631893389309574
+        }
+    },
+    "test_results": {
+        "Linear_Regression": {
+            "MAE": 171.04853600820545,
+            "MSE": 70640.86115676665,
+            "RMSE": 265.78348548539776,
+            "R2_Score": 0.887908221628841,
+            "R2_Percentage": 88.7908221628841,
+            "MAPE_Percentage": 18.375886275208345
+        },
+        "Random_Forest": {
+            "MAE": 131.4589413081016,
+            "MSE": 44454.63647890661,
+            "RMSE": 210.8426818244034,
+            "R2_Score": 0.9294601003135319,
+            "R2_Percentage": 92.94601003135318,
+            "MAPE_Percentage": 10.829250458121944
+        },
+        "Gradient_Boosting": {
+            "MAE": 80.75098126149372,
+            "MSE": 18641.455849993774,
+            "RMSE": 136.53371689803868,
+            "R2_Score": 0.9704200387221201,
+            "R2_Percentage": 97.042003872212,
+            "MAPE_Percentage": 6.696816424613863
+        },
+        "Extra_Trees": {
+            "MAE": 112.6799775,
+            "MSE": 32281.63912220972,
+            "RMSE": 179.67091896634167,
+            "R2_Score": 0.9487760160523205,
+            "R2_Percentage": 94.87760160523206,
+            "MAPE_Percentage": 9.46986432038877
+        },
+        "ANN": {
+            "MAE": 39.920101165771484,
+            "MSE": 3475.865478515625,
+            "RMSE": 58.956471048695114,
+            "R2_Score": 0.994484543800354,
+            "R2_Percentage": 99.4484543800354,
+            "MAPE_Percentage": 3.663317472937519
+        }
+    },
+    "best_model_test_performance": {
+        "MAE": 39.920101165771484,
+        "MSE": 3475.865478515625,
+        "RMSE": 58.956471048695114,
+        "R2_Score": 0.994484543800354,
+        "R2_Percentage": 99.4484543800354,
+        "MAPE_Percentage": 3.663317472937519
+    },
+    "real_world_validated": false
+}

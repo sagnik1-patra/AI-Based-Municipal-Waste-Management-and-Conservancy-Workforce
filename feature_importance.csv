@@ -1,0 +1,11 @@
+Feature,Importance
+disposal_sites,0.006132115476736288
+other_workers,0.00720921876251653
+population_density,0.010958126292374023
+absenteeism_rate,0.012006680764291395
+transport_distance_km,0.01326315220521318
+working_hours,0.07012264888948619
+equipment_efficiency,0.09162056361569797
+seasonal_demand_factor,0.10962591994881346
+worker_productivity,0.1766392494642792
+daily_waste_tonnes,0.5024223245805919

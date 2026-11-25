@@ -1,0 +1,80 @@
+project:
+  name: AI-Based Municipal Waste Management and Conservancy Workforce Optimization
+  version: '1.0'
+  task: regression
+  random_seed: 42
+  data_type: synthetic_simulation
+dataset:
+  original_dataset: C:\Users\sagni\Downloads\AI-Based Municipal Waste Management and
+    Conservancy Workforce\number_of conservancy_workers_engaged_in_conservancy_garbage_and_debris_disposal_and_other_particulars_2017_18.csv
+  original_records: 1
+  synthetic_records: 10000
+  synthetic_dataset: synthetic_municipal_dataset.csv
+  target: required_workers
+  features:
+  - disposal_sites
+  - other_workers
+  - daily_waste_tonnes
+  - population_density
+  - working_hours
+  - worker_productivity
+  - equipment_efficiency
+  - absenteeism_rate
+  - transport_distance_km
+  - seasonal_demand_factor
+baseline:
+  conservancy_workers: 847
+  disposal_sites: 105
+  other_workers: 412
+  total_workforce: 1259
+  workers_per_site: 8.066666666666666
+simulation:
+  nominal_capacity_tonnes_per_worker_hour: 0.18
+  minimum_workers_per_site: 2
+  noise_standard_deviation: 0.03
+  waste_per_site_range:
+  - 3.0
+  - 12.0
+  working_hours_range:
+  - 6
+  - 10
+  productivity_range:
+  - 0.6
+  - 1.4
+  equipment_efficiency_range:
+  - 0.55
+  - 0.98
+  absenteeism_range:
+  - 0.02
+  - 0.2
+  transport_distance_range_km:
+  - 2
+  - 30
+  seasonal_demand_factor_range:
+  - 0.8
+  - 1.5
+  daily_wage_range:
+  - 400
+  - 1000
+training:
+  training_samples: 6400
+  validation_samples: 1600
+  testing_samples: 2000
+  feature_scaling: StandardScaler
+  target_scaling_for_ann: StandardScaler
+  epochs: 200
+  batch_size: 64
+  early_stopping_patience: 20
+models:
+  best_machine_learning_model: Gradient_Boosting
+  best_overall_model: ANN
+  ann_model: model.h5
+  machine_learning_model: model.pkl
+  model_bundle: model_bundle.pkl
+  scaler: scaler.pkl
+  ann_target_scaler: target_scaler.pkl
+limitations:
+- Original dataset contains one aggregate record.
+- Operational variables are synthetically generated.
+- Prediction targets follow an assumed simulation formula.
+- Results are not validated against real municipal operations.

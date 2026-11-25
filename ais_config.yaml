@@ -1,0 +1,66 @@
+project:
+  name: AIS-Based Municipal Waste Management and Conservancy Workforce Optimization
+  version: '1.0'
+  algorithm: Artificial Immune System
+  method: Clonal Selection Algorithm
+  random_seed: 42
+  data_type: synthetic_simulation
+dataset:
+  original_dataset: C:\Users\sagni\Downloads\AI-Based Municipal Waste Management and
+    Conservancy Workforce\number_of conservancy_workers_engaged_in_conservancy_garbage_and_debris_disposal_and_other_particulars_2017_18.csv
+  synthetic_dataset: C:\Users\sagni\Downloads\AI-Based Municipal Waste Management
+    and Conservancy Workforce\synthetic_municipal_dataset.csv
+  total_records: 10000
+  training_records: 6400
+  validation_records: 1600
+  testing_records: 2000
+  features:
+  - disposal_sites
+  - other_workers
+  - daily_waste_tonnes
+  - population_density
+  - working_hours
+  - worker_productivity
+  - equipment_efficiency
+  - absenteeism_rate
+  - transport_distance_km
+  - seasonal_demand_factor
+  target: required_workers
+ais_parameters:
+  population_size: 40
+  generations: 150
+  selected_antibodies: 10
+  base_clones_per_antibody: 5
+  receptor_editing_rate: 0.15
+  initial_mutation_rate: 0.15
+  minimum_mutation_rate: 0.005
+  weight_limit: 5.0
+  regularization: 0.0001
+  fitness_function: Training MSE with weight regularization
+  affinity_function: 1 / (1 + fitness)
+  memory_selection: Minimum validation MSE
+neural_network:
+  input_size: 10
+  hidden_layer_1: 16
+  hidden_layer_2: 8
+  output_size: 1
+  activation: ReLU
+  total_parameters: 321
+  gradient_training: false
+constraints:
+  minimum_workers_per_site: 2
+  integer_workforce_predictions: true
+files:
+  h5_model: ais_model.h5
+  pkl_model: ais_model.pkl
+  feature_scaler: ais_scaler.pkl
+  target_scaler: ais_target_scaler.pkl
+  best_antibody: ais_best_antibody.npy
+  results: ais_result.csv
+  predictions: ais_prediction.csv
+limitations:
+- Original dataset contains aggregate statistics.
+- Training and testing use synthetic scenarios.
+- AIS optimizes prediction model parameters.
+- Site-level workforce allocation is not validated.
+- Real-world municipal performance is not established.
