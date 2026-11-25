@@ -1,0 +1,2 @@
+disposal_sites,other_workers,daily_waste_tonnes,population_density,working_hours,worker_productivity,equipment_efficiency,absenteeism_rate,transport_distance_km,seasonal_demand_factor,Available_Workers,PSO_Predicted_Workers,PSO_Workforce_Shortage,PSO_Workforce_Surplus,Data_Type
+105,412,650,12000,8,1.0,0.85,0.08,10,1.1,847,563,0,284,Synthetic Simulation

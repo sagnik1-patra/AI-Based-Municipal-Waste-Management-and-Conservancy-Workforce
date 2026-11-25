@@ -1,0 +1,126 @@
+{
+    "project": "PSO-Based Municipal Waste Management and Conservancy Workforce Optimization",
+    "algorithm": "Particle Swarm Optimization",
+    "evaluation_type": "Synthetic Simulation",
+    "best_iteration": 150,
+    "best_validation_loss": 0.04241982847452164,
+    "global_best_fitness": 0.04266770475506783,
+    "fitness_evaluations": 6040,
+    "training_metrics": {
+        "MAE": 116.9253125,
+        "MSE": 23679.4390625,
+        "RMSE": 153.88124987307583,
+        "R2_Score": 0.9573583326428601,
+        "R2_Percentage": 95.73583326428601,
+        "MAPE_Percentage": 12.061046725130058
+    },
+    "validation_metrics": {
+        "MAE": 113.435,
+        "MSE": 23559.4425,
+        "RMSE": 153.49085477643285,
+        "R2_Score": 0.9609044034796514,
+        "R2_Percentage": 96.09044034796514,
+        "MAPE_Percentage": 11.5557531247091
+    },
+    "test_metrics": {
+        "MAE": 122.731,
+        "MSE": 26617.45,
+        "RMSE": 163.14855193963567,
+        "R2_Score": 0.9577638599339242,
+        "R2_Percentage": 95.77638599339242,
+        "MAPE_Percentage": 12.277205436565055
+    },
+    "model_comparison": [
+        {
+            "Model": "ANN",
+            "MAE": 39.8755,
+            "MSE": 3466.4585,
+            "RMSE": 58.87663798146087,
+            "R2_Score": 0.994499479599314,
+            "R2_Percentage": 99.4499479599314,
+            "MAPE_Percentage": 3.6278074354763503
+        },
+        {
+            "Model": "Gradient Boosting",
+            "MAE": 80.5475,
+            "MSE": 18608.9875,
+            "RMSE": 136.41476276415247,
+            "R2_Score": 0.9704715589758652,
+            "R2_Percentage": 97.04715589758652,
+            "MAPE_Percentage": 6.5798723876808936
+        },
+        {
+            "Model": "PSO-ANN",
+            "MAE": 122.731,
+            "MSE": 26617.45,
+            "RMSE": 163.14855193963567,
+            "R2_Score": 0.9577638599339242,
+            "R2_Percentage": 95.77638599339242,
+            "MAPE_Percentage": 12.277205436565055
+        },
+        {
+            "Model": "Extra Trees",
+            "MAE": 112.7885,
+            "MSE": 32286.3765,
+            "RMSE": 179.68410196787028,
+            "R2_Score": 0.948768498857702,
+            "R2_Percentage": 94.8768498857702,
+            "MAPE_Percentage": 9.494677297645346
+        },
+        {
+            "Model": "AIS-ANN",
+            "MAE": 143.0005,
+            "MSE": 33268.9845,
+            "RMSE": 182.39787416524348,
+            "R2_Score": 0.9472093123421628,
+            "R2_Percentage": 94.72093123421628,
+            "MAPE_Percentage": 17.705429750024066
+        },
+        {
+            "Model": "Random Forest",
+            "MAE": 131.559,
+            "MSE": 44451.847,
+            "RMSE": 210.83606664894884,
+            "R2_Score": 0.92946452661364,
+            "R2_Percentage": 92.946452661364,
+            "MAPE_Percentage": 10.85253535515992
+        },
+        {
+            "Model": "Linear Regression",
+            "MAE": 162.3105,
+            "MSE": 66998.6675,
+            "RMSE": 258.84100814979064,
+            "R2_Score": 0.8936875957399962,
+            "R2_Percentage": 89.36875957399963,
+            "MAPE_Percentage": 15.414001639790849
+        }
+    ],
+    "workforce_summary": {
+        "Algorithm": "Particle Swarm Optimization",
+        "Total_Test_Scenarios": 2000,
+        "Best_Iteration": 150,
+        "Global_Best_Fitness": 0.04266770475506783,
+        "Best_Validation_Loss": 0.04241982847452164,
+        "Fitness_Evaluations": 6040,
+        "MAE": 122.731,
+        "MSE": 26617.45,
+        "RMSE": 163.14855193963567,
+        "R2_Score": 0.9577638599339242,
+        "R2_Percentage": 95.77638599339242,
+        "MAPE_Percentage": 12.277205436565055,
+        "Average_Available_Workforce": 887.598,
+        "Average_Predicted_Workforce": 1248.666,
+        "Average_Workforce_Shortage": 490.9,
+        "Average_Workforce_Surplus": 129.832,
+        "Average_Workforce_Utilization": 87.03246102824264,
+        "Average_Daily_Cost": 886830.7681987805,
+        "Shortage_Scenarios": 1187,
+        "Surplus_Scenarios": 810,
+        "Balanced_Scenarios": 3,
+        "Optimization_Time_Seconds": 8.772135496139526,
+        "Execution_Time_Seconds": 45.53756928443909,
+        "Evaluation_Type": "Synthetic Simulation",
+        "Real_World_Validated": false
+    },
+    "real_world_validated": false
+}

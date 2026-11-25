@@ -1,0 +1,66 @@
+project:
+  name: PSO-Based Municipal Waste Management and Conservancy Workforce Optimization
+  version: '1.0'
+  algorithm: Particle Swarm Optimization
+  random_seed: 42
+  data_type: synthetic_simulation
+dataset:
+  original_dataset: C:\Users\sagni\Downloads\AI-Based Municipal Waste Management and
+    Conservancy Workforce\number_of conservancy_workers_engaged_in_conservancy_garbage_and_debris_disposal_and_other_particulars_2017_18.csv
+  synthetic_dataset: C:\Users\sagni\Downloads\AI-Based Municipal Waste Management
+    and Conservancy Workforce\synthetic_municipal_dataset.csv
+  total_records: 10000
+  training_records: 6400
+  validation_records: 1600
+  testing_records: 2000
+  features:
+  - disposal_sites
+  - other_workers
+  - daily_waste_tonnes
+  - population_density
+  - working_hours
+  - worker_productivity
+  - equipment_efficiency
+  - absenteeism_rate
+  - transport_distance_km
+  - seasonal_demand_factor
+  target: required_workers
+pso_parameters:
+  swarm_size: 40
+  iterations: 150
+  maximum_inertia_weight: 0.9
+  minimum_inertia_weight: 0.4
+  cognitive_coefficient: 1.5
+  social_coefficient: 1.5
+  position_limit: 5.0
+  velocity_limit: 0.3
+  regularization: 0.0001
+  fitness_function: Training MSE with weight regularization
+  checkpoint_selection: Minimum validation MSE
+  fitness_evaluations: 6040
+neural_network:
+  input_size: 10
+  hidden_layer_1: 16
+  hidden_layer_2: 8
+  output_size: 1
+  activation: ReLU
+  total_parameters: 321
+  gradient_training: false
+constraints:
+  minimum_workers_per_site: 2
+  integer_workforce_predictions: true
+files:
+  h5_model: pso_model.h5
+  pkl_model: pso_model.pkl
+  feature_scaler: pso_scaler.pkl
+  target_scaler: pso_target_scaler.pkl
+  best_particle: pso_best_particle.npy
+  results: pso_result.csv
+  predictions: pso_prediction.csv
+limitations:
+- Original dataset contains aggregate statistics.
+- Training and testing use synthetic scenarios.
+- PSO optimizes prediction model parameters.
+- Site-level workforce allocation is not validated.
+- AIS and PSO use different fitness evaluation budgets.
+- Real-world municipal performance is not established.
